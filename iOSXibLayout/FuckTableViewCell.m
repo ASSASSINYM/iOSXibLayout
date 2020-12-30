@@ -1,29 +1,23 @@
 //
-//  MTTableViewCell.m
+//  FuckTableViewCell.m
 //  iOSXibLayout
 //
 //  Created by ASSASSIN on 2020/12/30.
 //
 
-#import "MTTableViewCell.h"
-#import "UIView+AdaptScreen.h"
+#import "FuckTableViewCell.h"
 
-@interface MTTableViewCell ()
+@interface FuckTableViewCell ()
 
-@property(nonatomic,weak)IBOutlet UILabel *contentLabel;
 @property(nonatomic,weak)IBOutlet UILabel *fuckLabel;
 
 @end
 
-@implementation MTTableViewCell
+@implementation FuckTableViewCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
-    
-    [self adaptScreenWidthWithType:AdaptScreenWidthTypeConstraint exceptViews:@[]];
-    
-    NSLog(@"content font = %@",self.contentLabel.font);
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

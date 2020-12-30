@@ -17,6 +17,8 @@
 		6525EB10259C5B5C00D73225 /* UIView+AdaptScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 6525EB08259C5B5C00D73225 /* UIView+AdaptScreen.m */; };
 		6525EB17259C5B6F00D73225 /* MTTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6525EB15259C5B6F00D73225 /* MTTableViewCell.m */; };
 		6525EB18259C5B7000D73225 /* MTTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6525EB16259C5B6F00D73225 /* MTTableViewCell.xib */; };
+		6525EB2B259C620B00D73225 /* FuckTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6525EB29259C620B00D73225 /* FuckTableViewCell.m */; };
+		6525EB2C259C620B00D73225 /* FuckTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6525EB2A259C620B00D73225 /* FuckTableViewCell.xib */; };
 		65DB2671259C45920039B573 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DB2670259C45920039B573 /* AppDelegate.m */; };
 		65DB2674259C45920039B573 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DB2673259C45920039B573 /* SceneDelegate.m */; };
 		65DB2677259C45920039B573 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DB2676259C45920039B573 /* ViewController.m */; };
@@ -66,6 +68,9 @@
 		6525EB14259C5B6F00D73225 /* MTTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTTableViewCell.h; sourceTree = "<group>"; };
 		6525EB15259C5B6F00D73225 /* MTTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTTableViewCell.m; sourceTree = "<group>"; };
 		6525EB16259C5B6F00D73225 /* MTTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MTTableViewCell.xib; sourceTree = "<group>"; };
+		6525EB28259C620B00D73225 /* FuckTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FuckTableViewCell.h; sourceTree = "<group>"; };
+		6525EB29259C620B00D73225 /* FuckTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FuckTableViewCell.m; sourceTree = "<group>"; };
+		6525EB2A259C620B00D73225 /* FuckTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FuckTableViewCell.xib; sourceTree = "<group>"; };
 		65DB266C259C45920039B573 /* iOSXibLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSXibLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65DB266F259C45920039B573 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		65DB2670259C45920039B573 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -182,6 +187,9 @@
 				6525EB14259C5B6F00D73225 /* MTTableViewCell.h */,
 				6525EB15259C5B6F00D73225 /* MTTableViewCell.m */,
 				6525EB16259C5B6F00D73225 /* MTTableViewCell.xib */,
+				6525EB28259C620B00D73225 /* FuckTableViewCell.h */,
+				6525EB29259C620B00D73225 /* FuckTableViewCell.m */,
+				6525EB2A259C620B00D73225 /* FuckTableViewCell.xib */,
 			);
 			path = iOSXibLayout;
 			sourceTree = "<group>";
@@ -308,6 +316,7 @@
 			files = (
 				6525EB18259C5B7000D73225 /* MTTableViewCell.xib in Resources */,
 				65DB2682259C45970039B573 /* LaunchScreen.storyboard in Resources */,
+				6525EB2C259C620B00D73225 /* FuckTableViewCell.xib in Resources */,
 				65DB267F259C45970039B573 /* Assets.xcassets in Resources */,
 				65DB267A259C45920039B573 /* Main.storyboard in Resources */,
 			);
@@ -339,6 +348,7 @@
 				65DB2677259C45920039B573 /* ViewController.m in Sources */,
 				6525EB0D259C5B5C00D73225 /* UITextField+FontFit.m in Sources */,
 				6525EAF6259C5B3F00D73225 /* MTTableViewController.m in Sources */,
+				6525EB2B259C620B00D73225 /* FuckTableViewCell.m in Sources */,
 				6525EB10259C5B5C00D73225 /* UIView+AdaptScreen.m in Sources */,
 				6525EB0C259C5B5C00D73225 /* UIButton+FontFit.m in Sources */,
 				6525EB0E259C5B5C00D73225 /* UILabel+FontFit.m in Sources */,
@@ -522,6 +532,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C2989MFX2P;
 				INFOPLIST_FILE = iOSXibLayout/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -540,6 +551,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C2989MFX2P;
 				INFOPLIST_FILE = iOSXibLayout/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
