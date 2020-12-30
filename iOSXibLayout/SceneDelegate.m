@@ -7,6 +7,7 @@
 
 #import "SceneDelegate.h"
 #import "AppDelegate.h"
+#import "MTTableViewController.h"
 
 @interface SceneDelegate ()
 
@@ -19,6 +20,15 @@
     // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
     // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
     // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
+    
+    UIWindowScene *windowScene = [[UIWindowScene alloc] initWithSession:session connectionOptions:connectionOptions];
+    UIWindow *window = [[UIWindow alloc] initWithWindowScene:windowScene];
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    MTTableViewController *vc = [sb instantiateViewControllerWithIdentifier:@"MTTableViewController"];
+    window.rootViewController = vc;
+    [window makeKeyAndVisible];
+    self.window = window;
+    
 }
 
 
