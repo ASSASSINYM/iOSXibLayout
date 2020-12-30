@@ -11,7 +11,7 @@
 @interface MTTableViewCell ()
 
 @property(nonatomic,weak)IBOutlet UILabel *contentLabel;
-@property(nonatomic,weak)IBOutlet UILabel *fuckLabel;
+@property(nonatomic,weak)IBOutlet UILabel *noteLabel;
 
 @end
 
@@ -20,6 +20,8 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
+    
+//    self.noteLabel.hidden = YES;
     
     [self adaptScreenWidthWithType:AdaptScreenWidthTypeConstraint exceptViews:@[]];
     
